@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A1A"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="55dp"
+        app:srcCompat="@drawable/ic_baseline_school_24" />
+
+    <TextView
+        android:id="@+id/login_header"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/inter"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="@string/logowanie"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/identifer_p"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_header"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter"
+        android:padding="5dp"
+        android:text="@string/identyfikator"
+        android:textAlignment="viewStart"
+        android:textColor="#4F4F4F"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/identifer_tfield"
+        android:background="@drawable/rounded_corner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_header"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/inter"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/password_p"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="105dp"
+        android:layout_below="@id/login_header"
+        android:fontFamily="@font/inter"
+        android:padding="5dp"
+        android:text="@string/has_o"
+        android:textAlignment="viewStart"
+        android:textColor="#4F4F4F"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/password_tfield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/identifer_tfield"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="@font/inter"
+        android:inputType="textPassword" />
+
+
+    <include
+        android:id="@+id/progress_login_btn"
+        layout="@layout/progress_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="180dp"
+        android:fontFamily="@font/inter"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_below="@id/login_header"
+        android:fontFamily="@font/inter"
+        android:text="@string/aplikacja_dedykowana_tylko_dla_student_w_u"
+        android:textAlignment="center"
+        android:textColor="#4F4F4F"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

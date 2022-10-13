@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Licznik średniej UŚ</string>
+    <string name="wyloguj">Wyloguj</string>
+    <string name="logowanie">Logowanie</string>
+    <string name="identyfikator">Identyfikator</string>
+    <string name="has_o">Hasło</string>
+    <string name="zaloguj">Logowanie za pomocą USOSWeb</string>
+    <string name="wybierz_okres">Wybierz okres:</string>
+    <string name="cze">Cześć,</string>
+    <string name="twoja_rednia_za_wskazany_okres">Twoja średnia za wskazany okres:</string>
+    <string name="aplikacja_dedykowana_tylko_dla_student_w_u">Aplikacja dedykowana tylko dla studentów UŚ</string>
+</resources>

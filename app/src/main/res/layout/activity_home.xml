@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A1A"
+    tools:context=".HomeActivity">
+
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:text="@string/cze"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="42sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hello"
+        android:textAlignment="viewStart"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:text="username"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+
+    <TextView
+        android:id="@+id/time_period"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/inter"
+        android:padding="5dp"
+        android:text="@string/wybierz_okres"
+        android:textAlignment="viewStart"
+        android:textColor="#4F4F4F"
+        android:textSize="14sp"
+        android:textStyle="bold"
+
+        />
+    <Spinner
+        android:id="@+id/spinner1"
+        style="@android:style/Widget.Holo.Light.DropDownItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_period"
+        android:layout_marginTop="10dp"
+        android:textCursorDrawable="@null"
+        android:textColorHint="@android:color/black"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:backgroundTint="#1A1A1A"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/your_mean"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/inter"
+        android:padding="5dp"
+        android:text="@string/twoja_rednia_za_wskazany_okres"
+        android:textAlignment="viewStart"
+        android:textColor="#4F4F4F"
+        android:textSize="14sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/mean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/your_mean"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="mean"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <include
+        layout="@layout/progress_button"
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="180dp"
+        android:fontFamily="@font/inter"
+        android:backgroundTint="#1A1A1A"
+        android:textColor="@color/white"
+        android:textAllCaps="false"  />
+
+
+</RelativeLayout>
